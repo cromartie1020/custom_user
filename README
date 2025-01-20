@@ -1,0 +1,7 @@
+Custom user model
+
+1 update config/settings.py
+create a new CustomUser model
+Create new forms for UserCreationForm and UserChangeForm
+update accounts/admin.py 
+
