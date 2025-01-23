@@ -47,3 +47,11 @@ def article_delete(request,id):
     article=Article.objects.get(id =id )
     article.delete()
     return render(request, 'articles/article_delete.html')
+
+def article_confirm_delete(request,id):
+    article=Article.objects.get(id =id )
+    
+    context ={
+        'article':article
+    }
+    return render(request, 'articles/article_delete_confirm.html', context)
