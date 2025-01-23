@@ -16,9 +16,9 @@
 
         </div>    
         <div class ='card-footer text-center text-muted'>
-            <a href="#">Edit</a> | <a href="#">Delete</a>
+            <a href="{% url 'article_update' article.id %}">Update</a> | <a href="{% url 'article_delete' article.id %}">Delete</a> | <a href="{% url 'article_new'  %}">New</a>
 
         </div>    
-     </div      
+    </div>      
    {% endfor %}
 {% endblock %}
